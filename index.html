@@ -17,14 +17,15 @@
       System.config({
         transpiler: 'typescript',
         typescriptOptions: { emitDecoratorMetadata: true },
-        packages: {'app': {defaultExtension: 'ts'}}
+        packages: {'heroes': {defaultExtension: 'ts'}}
       });
-      System.import('app/main')
+      System.import('heroes/main')
             .then(null, console.error.bind(console));
     </script>
   </head>
   <!-- 3. Display the application -->
   <body>
-    <hello-world>Loading...</hello-world>
+    <my-app>Loading...</my-app>
+
   </body>
 </html>
