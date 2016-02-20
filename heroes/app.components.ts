@@ -22,7 +22,7 @@ interface Hero {
       </div>
       <h2>My Heroes</h2>
         <ul class="heroes">
-            <li *ngFor="#hero of heroes"  (click)="onSelect(hero)" >
+            <li *ngFor="#hero of heroes"  (click)="onSelect(hero)" [class.selected]="hero === selectedHero" >
                  <span class="badge">{{hero.id}}</span> {{hero.name}}
             </li>
         </ul>
